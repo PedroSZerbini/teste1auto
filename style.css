@@ -68,7 +68,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.4rem;
     padding: 6px 10px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 nav ul li a:hover {
@@ -87,13 +87,20 @@ nav ul li a:hover {
 @media (max-width: 830px) {
     
     html{
-        font-size: 55%;
+        font-size: 60%;
     }
 
 }
 
 @media (max-width: 768px) {
-    
+
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 720px) {
+
     nav {
         display: none;
     }
@@ -102,10 +109,12 @@ nav ul li a:hover {
     .two,
     .three {
         background-color: white;
-        height: 4px;
         width: 100%;
-        margin: 7px auto;
-        border-radius: 4px;
+        height: 4.5px;
+        margin: 6px auto;
+        border-radius: 50px;
+
+        transition-duration: 0.3s;
     }
 
     .menu-burguer {
@@ -117,53 +126,53 @@ nav ul li a:hover {
         position: absolute;
 
         top: 0;
-        left: 0;
+        right: 0;
 
         width: 100vw;
-        height: 100%;
+        height: 100vh;
 
-        background: linear-gradient(150deg, #201e1e, #484646 );
-
+        background-color: rgb(34, 34, 34);
         
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .menu-section.on nav {
         display: block;
     }
 
-    .menu-section.on .menu-burguer{
+    .menu-section.on .menu-burguer {
         position: absolute;
-        right: 20px;
+        right: 15px;
         top: 15px;
     }
 
-    .menu-section.on .menu-burguer .one{
-        transform: rotate(45deg) translate(7px, 7px);
+    .menu-section.on .menu-burguer .one {
+        transform: rotate(45deg) translate(7px, 8px);
     }
 
-    .menu-section.on .menu-burguer .two{
+    .menu-section.on .menu-burguer .two {
         opacity: 0;
-    } 
+    }
 
-    .menu-section.on .menu-burguer .three{
-        transform: rotate(-45deg) translate(8px, -9px);
+    .menu-section.on .menu-burguer .three {
+        transform: rotate(-45deg) translate(7px, -9px);
     }
 
     .menu-section.on nav ul {
         display: block;
         text-align: center;
+        margin-left: 0;
     }
 
     .menu-section.on nav ul li a {
         transition-duration: 0.3s;
-        font-size: 4.5rem;
+        font-size: 3rem;
         line-height: 15rem;
-        margin-left: 0;
     }
 }
-
 /*MAIN*/
 
 
 /*MOBILE*/
-
